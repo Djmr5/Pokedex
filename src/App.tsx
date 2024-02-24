@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/Button';
+import Button from './components/Button/Button';
+import Top from './components/Top/Top';
+import PokeImage from './components/PokeImage/PokeImage';
+import Bottom from './components/Bottom/Bottom';
 function App() {
 
   const [contador, setContador]= React.useState(0);
@@ -16,10 +19,9 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>HELLO WORLD {contador}</h1>
-      <Button onClick={aumentar} label="Aumentar" color='blue'></Button>
-      <Button onClick={disminuir} label="Disminuir" color='red'></Button>
-
+      <Top/>
+      <PokeImage/>
+      <Bottom/>
     </div>
   );
 }
