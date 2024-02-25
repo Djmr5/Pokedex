@@ -11,8 +11,8 @@ export default function Bottom(props: any) {
     return (
         <div className="Bottom">
             <div className="Arrows">
-                <ArrowButton direction="up" onClick={() => handleArrowClick('up')} />
-                <ArrowButton direction="down" onClick={() => handleArrowClick('down')} />
+                <ArrowButton onClick={() => handleArrowClick('up')} />
+                <ArrowButton onClick={() => handleArrowClick('down')} direction="down" />
             </div>
             <Details />
         </div>

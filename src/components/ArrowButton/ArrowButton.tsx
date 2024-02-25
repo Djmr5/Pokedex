@@ -2,7 +2,7 @@ import "./ArrowButton.css";
 
 interface ArrowButtonProps {
   onClick?: () => void;
-  direction: string;
+  direction?: 'up' | 'down' | 'left' | 'right';
 }
 
 /**
@@ -10,7 +10,8 @@ interface ArrowButtonProps {
  * in the direction specified by the direction prop and calls
  * the function specified by the onClick prop.
  * 
- * @param {ArrowButtonProps} props 
+ * @param {() => void} props.onClick - The function to call when the button is clicked.
+ * @param {string} props.direction - The direction the arrow should point. Defaults to 'up'.
  * @example
  * <ArrowButton direction="up" onClick={() => console.log('up')} />
  * 
