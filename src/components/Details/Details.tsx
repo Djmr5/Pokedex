@@ -1,9 +1,10 @@
+import "./Details.css";
+
 export default function Details(props: any) {
     return (
-      <div>
-        <h1>Details</h1>
-        <h2>Name</h2>
-        <h2>Description</h2>
+      <div id="Details">
+        <div id="Name">Name</div>
+        <div id="Description">Description</div>
       </div>
     );
 }

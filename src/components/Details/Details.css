@@ -1,0 +1,11 @@
+#Details {
+    @apply flex flex-col w-full;
+}
+
+#Name {
+    @apply bg-green-600 text-white;
+}
+
+#Description {
+    @apply bg-black text-white;
+}
