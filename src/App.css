@@ -1,5 +1,6 @@
 
 .App {
+
   @apply bg-red-600 rounded-xl;
   width: 400px;
   height: 600px;
@@ -9,4 +10,6 @@
   justify-content: space-between; /* Updated to space-between */
   margin: auto;
   min-height: 100vh; /* Updated to fill the viewport */
+
+  /*@apply bg-red-600 h-screen w-full p-6; */
 }

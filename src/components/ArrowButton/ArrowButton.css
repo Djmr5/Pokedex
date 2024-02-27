@@ -1,0 +1,33 @@
+.ArrowButton {
+    @apply
+    bg-slate-500
+    border-slate-950
+    border-2
+    rounded
+    p-1
+    m-1
+    hover:bg-slate-400;
+}
+
+.Arrow {
+    @apply
+    bg-slate-500
+    h-6
+    w-6
+    border-x-12
+    border-x-transparent
+    border-b-24
+    border-b-slate-950;
+}
+
+.down-arrow {
+    @apply rotate-180;
+}
+
+.right-arrow {
+    @apply rotate-90;
+}
+
+.left-arrow {
+    @apply -rotate-90;
+}
