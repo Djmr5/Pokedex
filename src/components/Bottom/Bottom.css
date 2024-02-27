@@ -1,5 +1,5 @@
 .Bottom {
-    @apply flex flex-row items-center justify-center;
+    @apply flex flex-row items-center justify-center w-11/12 m-2;
 }
 
 .Arrows {
