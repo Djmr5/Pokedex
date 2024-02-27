@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .pokeball {
+    width: 52px;
+    height: 52px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+    /*margin-top: 24px; */
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .half-ball {
+    width: 50px;
+    height: 25px;
+  }
+  
+  .top-half {
+    background-color: red;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid black; 
+  }
+  
+  .bottom-half {
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid black; 
+  }
+  
+  .center-circle {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black; 
+  }
+  
+  .center-circle-outer {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 2px solid black;
+  }
+  
+  .center-circle-inner {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+  }
+  
+  .black-bar {
+    height: 6px;
+    width: 50px;
+    background-color: black;
+    position: absolute;
+  }
+
+  /* Flashy Blue Button CSS (top left corner) */
+  
+  .outer-circle {
+    position: relative;
+  }
+  
+  .outer-circle .inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: black;
+    border-width:1px;
+  }
+  
+  .outer-circle .inner-circle-1 {
+    width: 56px;
+    height: 56px;
+    background-color: #08DFFB; /* Light blue color */
+    border-radius: 50%;
+  }
+  
+  .outer-circle .inner-circle-2 {
+    width: 46px;
+    height: 46px;
+    background-color: #00FFFF;
+    border-radius: 50%;
+  }
+
+  
+  
+  
+  
