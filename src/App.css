@@ -1,3 +1,12 @@
+
 .App {
-  @apply bg-red-600 h-screen w-full;
+  @apply bg-red-600 rounded-xl;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column; /* Updated to column layout */
+  align-items: center;
+  justify-content: space-between; /* Updated to space-between */
+  margin: auto;
+  min-height: 100vh; /* Updated to fill the viewport */
 }
