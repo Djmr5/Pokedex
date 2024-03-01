@@ -1,6 +1,9 @@
 .PokeImage {
-    background-image: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png');
     background-size: 350px; 
     background-position: 10px center;
     background-repeat: no-repeat; /* Prevent the background image from repeating */
   }
+
+.PokeImage img {
+    @apply w-full h-full;
+}
