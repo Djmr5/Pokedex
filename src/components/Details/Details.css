@@ -1,11 +1,24 @@
 #Details {
     @apply flex flex-col w-full;
+    justify-content: space-between;
+    height: 100%;
 }
 
 #Name {
     @apply bg-green-600 text-white;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#Description {
-    @apply bg-black text-white;
+#ID {
+    @apply bg-black text-white w-full;
+    height: 80px;
+    border-radius: 8px;
+    border: 2px solid white;
+    padding-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
