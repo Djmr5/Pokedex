@@ -4,6 +4,7 @@ import Top from './components/Top/Top';
 import PokeImage from './components/PokeImage/PokeImage';
 import Bottom from './components/Bottom/Bottom';
 import { Pokemon } from './models/Pokemon';
+import SearchBar from './components/SearchBar/SearchBar';
 function App() {
 
   const [pokemonsNumber, setPokemonsNumber] = React.useState<number>(0);
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <Top/>
+      <SearchBar/>
       <PokeImage/>
       <Bottom/>
       {/* <button onClick={() => console.log(pokemonsNumber)}>Log Pokemons</button>
