@@ -26,10 +26,16 @@ function App() {
     });
   }, []);
 
+  const changePokemonByName = useCallback((pokemonName: string) => {
+    PokeApi.getPokemonByName(pokemonName).then((response)=>{
+      setPokemon(response.data as Pokemon);
+    });
+  }, []);
+
   return (
     <div className="App">
       <Top/>
-      <SearchBar/>
+      <SearchBar changePokemonByName={changePokemonByName}></SearchBar>
       
       <PokeImage
         src={pokemon?.sprites.other['official-artwork'].front_default??''}

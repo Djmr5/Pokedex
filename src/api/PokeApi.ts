@@ -6,5 +6,9 @@ export const PokeApi = {
     },
     getAllPokemons: async function () {
         return api.get('/pokemon?limit=10000')
+    },
+    getPokemonByName: async function (name: string) {
+        return api.get(`/pokemon/${name}`)
     }
+
 }
