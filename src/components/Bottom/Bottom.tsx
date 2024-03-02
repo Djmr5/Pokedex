@@ -9,6 +9,7 @@ interface BottomProps {
     pokemonId: number;
     name: string;
     types: Type[];
+    changePokemon: (id: number) => void;
 }
 
 export default function Bottom(props: BottomProps) {
@@ -16,18 +17,25 @@ export default function Bottom(props: BottomProps) {
     const [pokemonId, setPokemonId] = React.useState<number>(props.pokemonId);
     
     const handleArrowClick = (direction: string) => {
+        let newPokemonId = 0;
         if (direction === 'up') {
-            if (pokemonId < props.totalPokemons) {
+            if (pokemonId < 1025) {
                 setPokemonId(pokemonId + 1);
+                newPokemonId = pokemonId + 1;
             } else {
                 setPokemonId(1);
+                newPokemonId = 1;
             }
+            props.changePokemon(newPokemonId);
         } else {
-            if (pokemonId > 2) {
+            if (pokemonId > 1) {
                 setPokemonId(pokemonId - 1);
+                newPokemonId = pokemonId - 1;
             } else {
-                setPokemonId(props.totalPokemons);
+                setPokemonId(1025);
+                newPokemonId = 1025;
             }
+            props.changePokemon(newPokemonId);
         }
 
     }

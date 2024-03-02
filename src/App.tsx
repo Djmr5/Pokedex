@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import './App.css';
 import Top from './components/Top/Top';
 import PokeImage from './components/PokeImage/PokeImage';
@@ -20,6 +20,12 @@ function App() {
     });
   }, []);
 
+  const changePokemon = useCallback((pokemonId: number) => {
+    PokeApi.getPokemonById(pokemonId).then((response)=>{
+      setPokemon(response.data as Pokemon);
+    });
+  }, []);
+
   return (
     <div className="App">
       <Top/>
@@ -34,6 +40,7 @@ function App() {
         pokemonId={pokemon?.id ?? 0}
         name={pokemon?.name ?? ''}
         types={pokemon?.types ?? []}
+        changePokemon={changePokemon}
       />
     </div>
   );
